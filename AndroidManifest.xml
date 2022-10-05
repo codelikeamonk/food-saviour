@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodsaviour">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_white"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_white_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodSaviour">
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".SettingsPage"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBot"
+            android:exported="false" />
+        <activity
+            android:name=".ReceivePage"
+            android:exported="false" />
+        <activity
+            android:name=".DonatePage"
+            android:exported="false" />
+        <activity
+            android:name=".OrdersPage"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".FirstPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
